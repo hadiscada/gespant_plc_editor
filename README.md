@@ -21,7 +21,7 @@ You'll need the following tools:
 - Clone the repository locally and go to the project folder.
 
 ```bash
-git clone https://github.com/Autonomy-Logic/openplc-editor.git
+git clone https://github.com/hadiscada/gespant_plc_editor.git
 
 cd openplc-editor
 ```
