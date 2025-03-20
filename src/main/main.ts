@@ -154,7 +154,7 @@ const createMainWindow = async () => {
     minWidth: 1124,
     minHeight: 628,
     show: false,
-    icon: getAssetPath('icon.png'),
+    icon: getAssetPath('/images/gespant_logo_c.png'),
     ...titlebarStyles,
     webPreferences: {
       sandbox: true,
