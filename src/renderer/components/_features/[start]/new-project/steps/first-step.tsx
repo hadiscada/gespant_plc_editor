@@ -42,7 +42,7 @@ const Step1 = ({ onNext, onClose }: { onNext: () => void; onClose: () => void })
   return (
     <>
       <div className='relative flex select-none items-center justify-center pb-12 pt-2'>
-        <div className='z-10 flex h-12 w-12 items-center justify-center rounded-full border-2 border-blue-500 bg-white text-blue-500 dark:bg-neutral-950 '>
+        <div className='z-10 flex h-12 w-12 items-center justify-center rounded-full border-2 border-green-500 bg-white text-green-500 dark:bg-neutral-950 '>
           1
         </div>
         <div className='h-[2px] w-12 bg-gray-500'></div>
@@ -68,8 +68,8 @@ const Step1 = ({ onNext, onClose }: { onNext: () => void; onClose: () => void })
               type='button'
               className={`flex h-10 w-40 items-center justify-center rounded-md border-2 ${
                 selected === 'plc-project'
-                  ? 'border-blue-300 bg-blue-300 text-white dark:border-neutral-600 dark:bg-neutral-600'
-                  : 'border-transparent bg-gray-200 text-black hover:border-blue-500 hover:dark:border-neutral-600'
+                  ? 'border-green-200 bg-green-200 text-white dark:border-neutral-600 dark:bg-neutral-600'
+                  : 'border-transparent bg-gray-200 text-black hover:border-green-500 hover:dark:border-neutral-600'
               }`}
               onClick={() => handleSelectType('plc-project')}
             >

@@ -1,6 +1,6 @@
 {
   "appId": "com.autonomylogic.openplceditor",
-  "productName": "OpenPLC Editor",
+  "productName": "GespantPLC Editor",
   "asar": true,
   "asarUnpack": "**\\*.{node,dll}",
   "generateUpdatesFilesForAllChannels": true,

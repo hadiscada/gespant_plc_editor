@@ -19,11 +19,11 @@ const AboutModal = () => {
   const closeModal = () => {
     setModalOpen('aboutOpenPlc', false)
   }
-  const title = 'OpenPLC Editor 4.0.0-beta'
-  const releaseDate = 'Release: 2024-12-31'
+  const title = 'GespantPLC Editor 4.0.0-beta'
+  const releaseDate = 'Release: 2025'
   const description = 'Open Source IDE for the OpenPLC Runtime, compliant with the IEC 61131-3 international standard.'
-  const copyright = '© 2024 Autonomy Logic'
-  const linkUrl = 'https://autonomylogic.com/'
+  const copyright = '© 2025 Winenerji'
+  const linkUrl = 'https://winenerji.com/'
 
   const handleOpenAboutLink = () => {
     void window.bridge.openExternalLinkAccelerator(linkUrl)
@@ -47,7 +47,7 @@ const AboutModal = () => {
   return (
     <Modal onOpenChange={handleOpenChange} open={isAboutModalOpen}>
       <ModalContent className='h-[520px] w-[508px] select-none flex-col justify-between px-4 py-4'>
-        <div className='flex h-[180px] w-full items-center justify-center bg-[#0464fb]'>
+        <div className='flex h-[180px] w-full items-center justify-center bg-[#009933]'>
           <img src={openPlcLogo} />
         </div>
 

@@ -74,15 +74,15 @@ const Step3 = ({ onPrev, onFinish, onClose }: { onPrev: () => void; onFinish: ()
   return (
     <>
       <div className='relative flex select-none items-center justify-center pt-2'>
-        <div className='z-10 flex h-12 w-12 items-center justify-center rounded-full border-2 border-blue-500 bg-blue-500 font-bold text-white'>
+        <div className='z-10 flex h-12 w-12 items-center justify-center rounded-full border-2 border-green-500 bg-green-500 font-bold text-white'>
           1
         </div>
-        <div className='h-[2px] w-12 bg-blue-300'></div>
-        <div className='z-10 flex h-12 w-12 items-center justify-center rounded-full border-2 border-blue-500 bg-blue-500 font-bold text-white'>
+        <div className='h-[2px] w-12 bg-green-300'></div>
+        <div className='z-10 flex h-12 w-12 items-center justify-center rounded-full border-2 border-green-500 bg-green-500 font-bold text-white'>
           2
         </div>
-        <div className='h-[2px] w-12 bg-blue-300'></div>
-        <div className='z-10 flex h-12 w-12 items-center justify-center rounded-full border-2 border-blue-500 bg-white text-blue-500 dark:bg-neutral-950'>
+        <div className='h-[2px] w-12 bg-green-300'></div>
+        <div className='z-10 flex h-12 w-12 items-center justify-center rounded-full border-2 border-green-500 bg-white text-green-500 dark:bg-neutral-950'>
           3
         </div>
       </div>
@@ -176,7 +176,7 @@ const Step3 = ({ onPrev, onFinish, onClose }: { onPrev: () => void; onFinish: ()
           </button>
           <button
             type='submit'
-            className={cn('h-8 w-52 items-center rounded-lg bg-blue-500 text-center font-medium text-white', {
+            className={cn('h-8 w-52 items-center rounded-lg bg-green-500 text-center font-medium text-white', {
               'cursor-not-allowed opacity-50': !language,
             })}
             disabled={!language}

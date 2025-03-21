@@ -1,4 +1,4 @@
- 
+
 import { CreateProjectFileProps } from '@root/main/modules/ipc/renderer'
 import { IProjectServiceResponse } from '@root/main/services'
 import { toast } from '@root/renderer/components/_features/[app]/toast/use-toast'
@@ -330,7 +330,7 @@ export const createSharedSlice: StateCreator<
 
       toast({
         title: 'The project was created successfully!',
-        description: 'To begin using the OpenPLC Editor, add a new POU to your project.',
+        description: 'To begin using the GespantPLC Editor, add a new POU to your project.',
         variant: 'default',
       })
 
