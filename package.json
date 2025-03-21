@@ -1,14 +1,34 @@
 {
   "name": "open-plc-editor",
-  "description": "OpenPLC Editor - IDE capable of creating programs for the OpenPLC Runtime",
+  "description": "GespantPLC Editor - IDE capable of creating programs for the GespantPLC Runtime",
   "version": "4.0.0-beta",
   "license": "MIT",
   "author": {
-    "name": "Autonomy Logic"
+    "name": "Winenerji"
   },
   "main": "./configs/dll/main.bundle.dev.js",
   "scripts": {
     "build": "concurrently \"npm run build:main\" \"npm run build:renderer\"",
+     "build:exe": "electron-builder",
+     "build": {
+  "appId": "GespantPLC.Editor",
+  "productName": "GespantPLC Editor",
+  "win": {
+    "icon": "assets/icon.ico",
+    "target": "nsis"
+  },
+  "mac": {
+    "icon": "assets/icon.icns"
+  },
+  "linux": {
+    "icon": "assets/icon.png"
+  },
+  "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true
+  }
+},
+
     "build:dll": "cross-env NODE_ENV=development TS_NODE_TRANSPILE_ONLY=true webpack --config ./configs/webpack/webpack.config.renderer.dev.dll.ts",
     "build:main": "cross-env NODE_ENV=production TS_NODE_TRANSPILE_ONLY=true webpack --config ./configs/webpack/webpack.config.main.prod.ts",
     "build:renderer": "cross-env NODE_ENV=production TS_NODE_TRANSPILE_ONLY=true webpack --config ./configs/webpack/webpack.config.renderer.prod.ts",
